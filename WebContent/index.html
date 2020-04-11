@@ -1,0 +1,69 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Backend UI</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+  <!--Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+   
+    Domain: <p id="getDomain"> </p>
+   
+    <section id="control-center">
+       <div id="fields">
+           
+           <label for="domain">Domain:</label>
+           <input type="text" id="domain" name="domain"><br>
+
+           <label for="type">Type:</label>
+           <input type="text" id="type" name="type"><br>
+
+           <label for="postal">Postalcode:</label>
+           <input type="text" id="postal" name="postal"><br>
+
+           <label for="office">Officecode:</label>
+           <input type="text" id="office" name="office"><br>
+
+           <label for="target">Target office:</label>
+           <input type="text" id="target" name="target"><br>
+
+           <label for="motivation">Motivation:</label>
+           <input type="text" id="motivation" name="motivation"><br>
+
+           <button id="post-btn">POST Data</button>
+        </div> 
+    </section>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.13.2/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCjdCqYpw4ZeaBHkHFVUMDNwzwtKoTyMvo",
+    authDomain: "kissic-case-manager-backend.firebaseapp.com",
+    databaseURL: "https://kissic-case-manager-backend.firebaseio.com",
+    projectId: "kissic-case-manager-backend",
+    storageBucket: "kissic-case-manager-backend.appspot.com",
+    messagingSenderId: "919875814800",
+    appId: "1:919875814800:web:c6373a8339b641c809df15",
+    measurementId: "G-LWDR0XEGHG"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
+  
+  <script src="jquery.min.js"></script>
+  <script src="index.js"></script>
+  
+
+  </body>
+</html>
